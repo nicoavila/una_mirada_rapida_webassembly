@@ -23,6 +23,9 @@
       function callSumar() {
         var num1 = document.getElementById('numero1').value;
         var num2 = document.getElementById('numero2').value;
+        if (num1 == '' || num2 == '') {
+          return alert('Oye y los números!?');
+        }
         UnaMiradaRapidaWebAssembly.sumar(num1,num2).then(function(resultado){
           var resultados = document.getElementById('resultados');
           var el = document.createElement('h3');
