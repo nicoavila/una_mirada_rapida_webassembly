@@ -1,0 +1,6 @@
+[package]
+name = "una_mirada_rapida_webassembly"
+version = "0.1.0"
+authors = ["Nicolas Avila <nicolasavila.a@gmail.com>"]
+
+[dependencies]

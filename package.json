@@ -1,0 +1,17 @@
+{
+  "name": "una_mirada_rapida_webassembly",
+  "version": "1.0.0",
+  "description": "Ejemplo de WebAssembly usando Rust",
+  "main": "index.js",
+  "scripts": {
+    "compile": "webpack --progress --verbose",
+    "serve": "http-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "rust-wasm-loader": "^0.1.2",
+    "webpack": "^3.10.0"
+  }
+}
