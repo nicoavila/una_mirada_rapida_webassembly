@@ -1,5 +1,5 @@
 fn main() {
-    println!("Hola Noders!");
+    println!("Hola Noders! Soy un módulo de WebAssembly y me estoy ejecutando!! :D");
 }
 
 #[no_mangle]

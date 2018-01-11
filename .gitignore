@@ -16,3 +16,7 @@ Cargo.lock
 # Dependency directories
 node_modules/
 build/
+
+#OTROS
+
+.DS_Store

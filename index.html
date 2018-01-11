@@ -2,9 +2,34 @@
 <html>
   <head>
     <title>Una mirada rapida a WebAssembly</title>
+    <link rel="shortcut icon" href="favicon.gif">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div id="container"></div>
+    <div id="contenedor">
+      <h3>Una mirada rápida a WebAssembly</h3>
+      <div class="contenedor_inputs">
+        <input type="text" name="numero1" id="numero1" placeholder="Número 1">    
+        <input type="text" name="numero2" id="numero2" placeholder="Número 2"> 
+      </div>
+      <button onClick="callSumar()">Sumar</button>
+      
+      <h3>Resultados</h3>
+      <div id="resultados"></div>
+    </div>
     <script src="build/bundle.js"></script>
+    <script>
+      function callSumar() {
+        var num1 = document.getElementById('numero1').value;
+        var num2 = document.getElementById('numero2').value;
+        UnaMiradaRapidaWebAssembly.sumar(num1,num2).then(function(resultado){
+          var resultados = document.getElementById('resultados');
+          var el = document.createElement('h3');
+          el.innerText = resultado;
+          resultados.append(el);
+        });
+      }
+    </script>
   </body>
 </html>

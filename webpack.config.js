@@ -3,6 +3,8 @@ module.exports = {
     output: {
       filename: 'bundle.js',
       path: __dirname + '/build',
+      libraryTarget: 'var',
+      library: 'UnaMiradaRapidaWebAssembly'
     },
     module: {
       rules: [
@@ -11,7 +13,8 @@ module.exports = {
           use: {
             loader: 'rust-wasm-loader',
             options: {
-              path: 'build'
+              path: 'build',
+              release: true
             }
           }
         }
